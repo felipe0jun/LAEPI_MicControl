@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Motores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      padding-top: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    .motor-control {
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    .angle-display {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="motor-control">
+    <h2>Motor 1</h2>
+    <button onclick="sendAngle(1, -15)">-15°</button>
+    <button onclick="sendAngle(1, 15)">+15°</button>
+    <div class="angle-display">Ângulo: <span id="angle1Value">0</span>°</div>
+    <input type="range" id="angle1" min="-90" max="90" step="15" value="0" oninput="updateSlider(1)">
+    <button onclick="sendSlider(1)">Mover para ângulo</button>
+  </div>
+  
+  <div class="motor-control">
+    <h2>Motor 2</h2>
+    <button onclick="sendAngle(2, -15)">-15°</button>
+    <button onclick="sendAngle(2, 15)">+15°</button>
+    <div class="angle-display">Ângulo: <span id="angle2Value">0</span>°</div>
+    <input type="range" id="angle2" min="-90" max="90" step="15" value="0" oninput="updateSlider(2)">
+    <button onclick="sendSlider(2)">Mover para ângulo</button>
+  </div>
+
+<script>
+  const ip = "192.168.1.177";
+
+  function sendAngle(motor, angle) {
+    fetch(`http://${ip}/motor/${motor}/move?angle=${angle}`)
+      .then(res => res.text())
+      .then(text => alert(text))
+      .catch(err => alert("Erro: " + err));
+  }
+
+  function sendSlider(motor) {
+    const slider = document.getElementById(`angle${motor}`);
+    const angle = parseInt(slider.value, 10);
+    sendAngle(motor, angle);
+  }
+
+  function updateSlider(motor) {
+    const slider = document.getElementById(`angle${motor}`);
+    const display = document.getElementById(`angle${motor}Value`);
+    display.textContent = slider.value;
+  }
+
+  window.onload = () => {
+    updateSlider(1);
+    updateSlider(2);
+  };
+</script>
+
+
+</body>
+</html>
