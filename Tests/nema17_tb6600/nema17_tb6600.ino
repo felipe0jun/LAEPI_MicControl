@@ -13,7 +13,7 @@ void setup() {
 
 void loop() {
     for (int i = 0; i < 5 * stepsPerRevolution; i++){ // Número 5 indica quantidade de rotações
-        digitalWrite(directionPin, HIGH) // HIGH pra uma direção / LOW para a outra direção
+        digitalWrite(directionPin, HIGH); // HIGH pra uma direção / LOW para a outra direção
         
         digitalWrite(stepPin, HIGH);
         delayMicroseconds(50); // Diminuir o delay aumenta a frequência do sinal do degrau, que vai fazer o degrau do motor mais rápido

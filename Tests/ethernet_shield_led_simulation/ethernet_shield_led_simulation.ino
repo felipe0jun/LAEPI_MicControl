@@ -7,7 +7,8 @@
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
 // Define o endereço IP fixo do Arduino na rede local
-byte ip[] = { 192, 168, 1, 177 };
+//byte ip[] = { 192, 168, 1, 177 };
+byte ip[] = { 192, 168, 0, 177 };
 
 // Cria o objeto do servidor Ethernet na porta 80 (HTTP padrão)
 EthernetServer servidor(80);
