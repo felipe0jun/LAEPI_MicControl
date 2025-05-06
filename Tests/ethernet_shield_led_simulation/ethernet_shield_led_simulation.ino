@@ -9,6 +9,7 @@ EthernetServer servidor(80);
 void setup() {
   Serial.begin(9600);
   Ethernet.begin(mac, ip);
+  delay(2000);
   Serial.print("IP do Arduino: ");
   Serial.println(Ethernet.localIP());
   servidor.begin();
