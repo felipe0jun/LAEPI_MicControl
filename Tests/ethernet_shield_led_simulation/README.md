@@ -8,9 +8,9 @@ A comunicação se baseia em:
 1. Navegador se conectar ao webserver por meio do ip;
 2. Webserver enviar página HTML para o navegador;
 3. Navegador receber a página HTML e renderizá-la adequadamente;
-4. Navegador interagir clicando no botão "LIGAR" ou "DESLIGAR";
-5. Webserver receber interpretar o acionamento do botão pressionado;
-6. Webserver executa determinada ação dependendo do botão pressionado.
+4. Navegador interagir clicando nos botões exibidos;
+5. Webserver receber e interpretar o acionamento do botão pressionado;
+6. Webserver executar determinada ação dependendo do botão pressionado.
 
 ## 💻 Hardware utilizado
 

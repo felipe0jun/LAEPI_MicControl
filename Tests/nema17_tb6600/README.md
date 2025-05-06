@@ -2,7 +2,7 @@
 
 ## Objetivo principal
 
-Realizar rotações no eixo do motor ao executar o código no Arduino.
+Realizar rotações no eixo de motores ao executar o código no Arduino.
 
 ## 💻 Hardware utilizado
 
