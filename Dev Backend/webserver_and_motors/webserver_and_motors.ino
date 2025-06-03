@@ -8,7 +8,7 @@ bool modoComRede = true; // true: Ethernet / false: Monitor Serial
 
 // ---------------- Ethernet Configuration ----------------
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(192, 168, 0, 177);
+IPAddress ip(192, 168, 1, 2);
 EthernetServer servidor(80);
 
 
@@ -21,7 +21,7 @@ EthernetServer servidor(80);
 
 #define stepsPerRevolution 6400
 #define stepsPerDegree (stepsPerRevolution / 360.0) // ~17.78 passos por grau
-#define delayMicrosecondsDesired 300
+#define delayMicrosecondsDesired 2000
 
 
 // ---------------- Ângulos dos Motores ----------------
