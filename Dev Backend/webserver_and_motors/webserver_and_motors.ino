@@ -21,16 +21,16 @@ EthernetServer servidor(80);
 
 #define stepsPerRevolution 6400
 #define stepsPerDegree (stepsPerRevolution / 360.0) // ~17.78 passos por grau
-#define delayMicrosecondsDesired 2000
+#define delayMicrosecondsDesired 10000
 
 
 // ---------------- Ângulos dos Motores ----------------
 float anguloMotor1 = 0;
-float maxAngleMotor1 = 180.0;
+float maxAngleMotor1 = 181.0;
 float minAngleMotor1 = 0.0;
 
 float anguloMotor2 = 0;
-float maxAngleMotor2 = 360.0;
+float maxAngleMotor2 = 361.0;
 float minAngleMotor2 = 0.0;
 
 // ---------------- Status de Motores ----------------
@@ -73,7 +73,7 @@ void rotateMotor(int motor, int degrees) {
 
   float novoAngulo = *anguloAtual + degrees;
 
-  if (novoAngulo > maxAngulo || novoAngulo < minAngulo) {
+  if (novoAngulo >= maxAngulo || novoAngulo <= minAngulo) {
     Serial.print("❌ Trajetória não pode ser executada no motor ");
     Serial.print(motor);
     Serial.println(" pois ultrapassa os limites permitidos.");
