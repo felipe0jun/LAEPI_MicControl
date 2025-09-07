@@ -42,7 +42,7 @@ O sistema pode ser controlado via **rede Ethernet (servidor web embarcado)** ou 
 
 ---
 
-## 💻 Configuração do Software
+## 💻 Configuração do software
 
 ### Dependências
 - [Arduino IDE](https://www.arduino.cc/en/software)  
@@ -80,7 +80,7 @@ Para sistemas **Windows** (no qual foram realizados os testes):
 15. Feche as configurações.
     
 
-### Alternando Modo de Operação
+### Alternando modo de operação
 No início do código, escolha se o controle será por **rede** ou por **serial**:
 ```cpp
 bool modoComRede = true; // true: Ethernet / false: Monitor Serial
