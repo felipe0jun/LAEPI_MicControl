@@ -155,7 +155,20 @@ Esses parâmetros podem ser ajustados no código conforme seu driver e motor.
 ## 🏗️ Estrutura do projeto
 
 ```
-📂 LAEPI_MicControl  
+📂 LAEPI_MicControl
+  ┣ 📂 API
+    ┣ 📂 creating_package
+      ┣ 📂 api_package
+        ┣ 📜 __init__.py
+        ┣ 📜 aux_functions.py
+        ┣ 📜 config.py
+        ┣ 📜 main_functions.py
+      ┣ 📜 main.py
+      ┣ 📜 requirements.txt
+    ┣ 📂 notebook
+      ┣ 📜 api_laepi.ipynb
+      ┣ 📜 requirements.txt
+    ┣ 📜 README.md
   ┣ 📂 Tests
     ┣ 📂 ethernet_shield_led_simulation
       ┣ 📜 README.md
