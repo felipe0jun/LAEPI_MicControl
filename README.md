@@ -42,6 +42,15 @@ O sistema pode ser controlado via **rede Ethernet (servidor web embarcado)** ou 
 
 ---
 
+## Cabeamento
+
+Abaixo, pode-se observar um esquema de ligações de fios:
+
+![Cabeamento Pjto PI](https://github.com/user-attachments/assets/dfaa6d53-20e1-4008-a6bb-268331e82438)
+
+
+---
+
 ## 💻 Configuração do software
 
 Temos dois vídeos monstrando as configurações e demonstrações de funcionamento do sistema projetado:
