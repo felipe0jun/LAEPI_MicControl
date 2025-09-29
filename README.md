@@ -42,7 +42,7 @@ O sistema pode ser controlado via **rede Ethernet (servidor web embarcado)** ou 
 
 ---
 
-## Cabeamento
+### Cabeamento
 
 Abaixo, pode-se observar um esquema de ligações de fios:
 
