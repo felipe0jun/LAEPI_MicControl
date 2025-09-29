@@ -1,7 +1,10 @@
 import requests
 import time
 
-BASE_URL = 'http://192.168.1.2/'
+from api_package.config import BASE_URL
+
+if not BASE_URL.endswith('/'):
+    BASE_URL += '/'
 
 def move_motor(motor_number : int, degrees : int) -> None:
     """
