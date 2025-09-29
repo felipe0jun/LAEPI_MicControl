@@ -2,6 +2,8 @@
 
 Esta seção do repositório mostra uma possibilidade no desenvolvimento de uma API em Python para realização de ações de forma automatizada e pré-programada no processo de medição.
 
+- [Vídeo demonstração código Python com pipeline completa de medição](https://drive.google.com/file/d/1JzpyqOZ0_BPRxIaVZZyTceJrk7otcbLN/view?usp=drive_link)
+
 ## Diretórios
 
 ### creating_package
