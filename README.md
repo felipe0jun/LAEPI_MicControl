@@ -34,15 +34,19 @@ O sistema pode ser controlado via **rede Ethernet (servidor web embarcado)** ou 
 
 | Motor | Pino Direção | Pino Passo | Limite de Ângulo | Observação |
 |-------|--------------|------------|------------------|------------|
-| Motor Superior 1 | D2 | D3 | 0° → 180° | Controlado por software |
-| Motor Superior 2 | D2 | D3 | 0° → 180° | Cabeamento invertido |
-| Motor Inferior (rotação) | D4 | D5 | 0° → 360° | Controlado por software |
+| Motor 1.1 Superior | D2 | D3 | 0° → 180° | Controlado por software |
+| Motor 1.2 Superior | D2 | D3 | 0° → 180° | Cabeamento invertido |
+| Motor 2 Inferior (rotação) | D4 | D5 | 0° → 360° | Controlado por software |
 
 > ⚠️ O código controla **Motor Superior (1)** e **Motor Inferior (eixo)**. O segundo motor superior (**Motor superior (2)**) funciona de forma inversa ao primeiro motor superior devido à configuração do cabeamento.
 
 ---
 
 ## 💻 Configuração do software
+
+Temos dois vídeos monstrando as configurações e demonstrações de funcionamento do sistema projetado:
+- [Vídeo configuração + demontração interface web + demontração via código Python](https://drive.google.com/file/d/1Jp4nhEutnwPQjifhXevI_f_mm55FSiDO/view?usp=drive_link)
+- [Vídeo demonstração código Python com pipeline completa de medição](https://drive.google.com/file/d/1JzpyqOZ0_BPRxIaVZZyTceJrk7otcbLN/view?usp=drive_link)
 
 ### Dependências
 - [Arduino IDE](https://www.arduino.cc/en/software)  
@@ -51,7 +55,7 @@ O sistema pode ser controlado via **rede Ethernet (servidor web embarcado)** ou 
 
 ### Configuração de rede
 
-Para sistemas **Windows** (no qual foram realizados os testes):
+Para sistemas **Windows (10)** (no qual foram realizados os testes):
 1. Conecte o cabo crossover no arduino e no computador.
 2. No computador, entre em *Configurações*.
 3. Selecione a opção *Rede e internet*.
