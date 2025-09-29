@@ -14,10 +14,12 @@ No diretório `notebook` você terá acesso a um exemplo de código desenvolvido
 
 ## Como usar
 
-Cada diretório tem seu respectivo arquivo `requirements.txt`. Esse arquivo fornece as dependências que os códigos tem em bibliotecas que não vem nativamente com o Python.
+Cada diretório tem seu respectivo arquivo `requirements.txt`. Esse arquivo fornece as dependências que os códigos têm em bibliotecas que não vem nativamente com o Python.
 
 **1. Clone este repositório** (para ter acesso aos arquivos de código).
+
 **2. Abra a sua IDE no diretório que desejar** (`creating_package` ou `notebook`).
+
 **3. Crie um ambiente virtual Python**. Abra o terminal/cmd e digite:
 
 No Windows:
